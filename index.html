@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Electronics Store - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Electronics Store</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="category.html?cat=laptop" class="text-gray-700 hover:text-blue-600">Laptops</a></li>
+                    <li><a href="category.html?cat=phone" class="text-gray-700 hover:text-blue-600">Phones</a></li>
+                    <li><a href="category.html?cat=accessory" class="text-gray-700 hover:text-blue-600">Accessories</a></li>
+                    <li><a href="category.html?cat=component" class="text-gray-700 hover:text-blue-600">Components</a></li>
+                    <li><a href="login.html" class="text-gray-700 hover:text-blue-600"><i class="fas fa-user"></i> Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-xl font-semibold mb-6">Featured Products</h2>
+        <div id="featured-products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Featured products will be loaded here by JS -->
+        </div>
+    </main>
+
+    <footer class="bg-white shadow mt-12 py-4">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            &copy; 2024 Electronics Store. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
